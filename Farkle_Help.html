@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="Author" content="Michael G. Slack">
+    <title>Farkle Help</title>
+  </head>
+  <body>
+    <div style="text-align: center;">
+      <h1>Farkle, the game of chance and luck - Help</h1>
+    </div>
+    <img style="width: 150px; height: 106px; float: left; padding: 0px 5px 5px 0px;" alt="Farkle Image" src="farkle_dice.bmp">
+    <p>This version of Farkle is a game of chance using a set of 6 dice. When a new game is began 
+       (pressing the New Game button), user names are input and one of them is selected to start the
+       game. One to six people can play this version. If one person is playing, the game will setup a
+       second person and play it against the single player.</p>
+    <p>The first player will roll the dice and select the dice to keep for scoring, usually by using
+	   the mouse and clicking on each one. The 'Keep all' button can be used to keep all of the currently
+	   available rolled dice. See scoring combinations below. Once at least one dice is selected to keep,
+	   the player can re-roll the remaining dice or end their turn. Note, if all dice were selected as
+	   valid scoring dice, then re-rolling will roll all six dice again. If re-rolling all six dice and
+	   'Strict Scoring Rules' is not checked, then the kept score is added to the users score total before
+	   the new roll is displayed. If no dice can be selected, the player can only end their turn. The term
+	   Farkle is used when a player has no scoring dice during a roll, hence the name of the game! If
+	   the player has kept dice and selects End Turn, then the kept score is added to the players score.
+	   Note, if 'Strict Scoring Rules' is checked, then a minimum of 500 points must be made for the
+	   score to count.</p>
+    <p>Players take turn rolling and scoring until one goes over the 'Score To' amount (defaults to
+       10000 points). At that time, all the other players get a final turn to try to beat the first
+       players score. Once everyone has taken a final turn, the player with the most points is the
+       winner.</p>
+    <div style="font-weight:bold;">Scoring/Points (in a single roll):</div>
+    <table style="text-align: left; width: 100%;">
+      <tbody>
+        <tr>
+          <th style="width: 20%;">Roll</th>
+          <th style="width: 15%;">Points</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>1's</td>
+          <td>100 each</td>
+          <td>1 (100 points)</td>
+        </tr>
+        <tr>
+          <td>5's</td>
+          <td>50 each</td>
+          <td>5 (50 points)</td>
+        </tr>
+        <tr>
+          <td>Three of a kind (1's)</td>
+          <td>300</td>
+          <td>1-1-1</td>
+        </tr>
+        <tr>
+          <td>Three of a kind (all others)</td>
+          <td>&lt;number&gt; * 100</td>
+          <td>2-2-2 = 200, 3-3-3 = 300, etc.</td>
+        </tr>
+        <tr>
+          <td>Four of a kind (any number)</td>
+          <td>1000</td>
+          <td>2-2-2-2 or 4-4-4-4, etc.</td>
+        </tr>
+        <tr>
+          <td>Five of a kind (any number)</td>
+          <td>2000</td>
+          <td>2-2-2-2-2 or 6-6-6-6-6, etc.</td>
+        </tr>
+        <tr>
+          <td>Six of a kind (any number)</td>
+          <td>3000</td>
+          <td>1-1-1-1-1-1 or 5-5-5-5-5-5, etc.</td>
+        </tr>
+        <tr>
+          <td>Straight (6 dice)</td>
+          <td>1500</td>
+          <td>1-2-3-4-5-6</td>
+        </tr>
+        <tr>
+          <td>3 pair (any number)</td>
+          <td>1500</td>
+          <td>2-2-3-3-6-6, etc. See options below.</td>
+        </tr>
+        <tr>
+          <td>2 triples</td>
+          <td>2500</td>
+          <td>1-1-1-4-4-4, etc.</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <div style="font-weight:bold;">Game Options:</div>
+    <div>This game of Farkle has several options that can affect game play. Below is a description of
+       each option and its effect.</div>
+    <ul>
+      <li>Verbose Messages = Turns on a lot of dialogs that pop up whenever something happens.
+          This is off by default.
+      <li>Sounds On = Turns on/off incidental sounds used in the game. Default is on.
+      <li>Strict Scoring Rules = If on, requires a minimum of 500 points before scores can be added
+          to a players score. In addition, no score is added until a player ends their turn. If off,
+          no minimum score is required to score points, even for the initial score, and scores are
+          added when the all six of the dice have been selected for scoring (re-rolling will roll
+          six dice). This way you can keep some of your score if you push too far with rolling.
+      <li>Safe Mode = If on (checked), then the rolled dice are checked when the 'End Turn' button
+          is pressed if no dice have been selected for scoring. If points are found, then a prompt
+          is displayed confirming the player still wants to end turn. If Verbose Messages is on,
+          this mode is not checked since an 'end turn' message is always displayed. Having safe mode
+          on also prevents a player from accidentally ending their turn without rolling at all.  In
+          addition, when safe mode is on, the kept score is checked against the score of all dice
+          when rolling again. If the total score is more than 200 points over the kept score, a prompt
+          is displayed confirming that the player wants to throw those points away.
+      <li>Count four of a kind / pair as 3 pair = If on, a four of a kind (1000 points) and a pair
+          (max potential of 200, if 2 1's) is counted as 3 pair (1500 points). If off, and the
+          pair is not 1's or 5's, then only the four of a kind will count for scoring.
+      <li>Sort Rolls = If on (checked), will display the dice rolls sorted from 1's to 6's in rolled
+          dice area. If not on (unchecked), then the dice are not sorted and displayed as rolled.
+      <li>Score To = Score amount that determines a win. Range can be from 1000 points to 100000
+          points defaulting to 10000 points. Note, less than 10000 could make a short game, while
+          more than around 25000 could make for a long game (depending on other options).
+    </ul>
+    <div style="font-weight:bold;">Keyboard Control:</div>
+    <div>This game of Farkle can be played entirely with the mouse, mouse and keyboard or just with the
+       keyboard. To select the first rolled or kept die, press '1'. To select the second rolled or kept
+       die, press '2', '3' for the third and so on up to '6'. The keyboard selection of dice does not work
+       if the 'ScoreTo' field is the focused/active field (accepting input).</div>
+    <p>For more information about Farkle and it's variants, see
+       <a href="http://en.wikipedia.org/wiki/Farkle">Wikipedia Farkle</a>.</p>
+    <div style="text-align: center; font-size: smaller;">
+      &copy;2009-2021 Slack &amp; Associates / M. G. Slack
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+This version of Farkle is a game of chance using a set of 6 dice.  When a new game is began (pressing the New Game button), user names are input and one of them is selected to start the game.  One to six people can play this version.  If one person is playing, the game will setup a second person and play it against the single player.
+
+The first player will roll the dice and select (by using the mouse and clicking on each one) the dice to keep for scoring.  See scoring combinations below.  Once at least one dice is selected to keep, the player can reroll the remaining dice or end their turn.  Note, if all dice were selected as valid scoring dice, then rerolling will roll all six dice again.  If rerolling all six dice and 'Strict Scoring Rules' is not checked, then the kept score is added to the users score total before the new roll is displayed.  If no dice can be selected, the player can only end their turn (the term Farkle is used when a player has no scoring dice during a roll, hence the name of the game!).  If the player has kept dice and selects End Turn, then the kept score is added to the players score.  Note, if 'Strict Scoring Rules' is checked, then a minimum of 500 points must be made for the score to count.
+
+Players take turn rolling and scoring until one goes over the 'Score To' amount (defaults to 10000 points).  At that time, all the other players get a final turn to try to beat the first players score.  Once everyone has taken a final turn, the player with the most points is the winner.
+
+Scoring (in a single roll):
+1's   = 100
+5's   = 50
+Three of a kind (1's)        = 300
+Three of a kind (all others) = <number> * 100 (2 2 2 = 200, 3 3 3 = 300, etc.)
+Four of a kind (any number)  = 1000
+Five of a kind (any number)  = 2000
+Six of a kind (any number)   = 3000
+Straight (6 dice)   = 1500
+3 pair (any number) = 1500 (if the Count 4/2 option is checked, four of a kind plus a pair are counted as 3 pair)
+2 triples           = 2500
+
+Options:
+> Verbose Messages = Turns on a lot of dialogs that pop up whenever something happens.  This is off by default.
+> Strict Scoring Rules = If on, requires a minimum of 500 points before scores can be added to a players score.  In addition, no score is added until a player ends their turn.  If off, no minimum score is required to, even for the initial score, and scores are added when the all six of the dice have been selected for scoring (rerolling will roll six dice).  This way you can keep some of your score if you push too far with rolling.
+> Count four of a kind / pair as 3 pair = If on, a four of a kind (1000 points) and a pair (max potential of 200, if 2 1's) is counted as 3 pair (1500 points).  If off, and the pair is not 1's or 5's, then only the four of a kind will count for scoring.
+> Score To = Score amount that determines a win.  Range can be from 1000 points to 100000 points defaulting to 10000 points.  Note, less than 10000 could make a short game, while more than around 25000 could make for a long game (depending on other options).
+
+See http://en.wikipedia.org/wiki/Farkle for more information about Farkle and varients.
