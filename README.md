@@ -14,7 +14,7 @@ https://sourceforge.net/projects/tpsystools/
 
 https://github.com/TurboPack/SysTools
 
-The TurboPower packages are well worth the effort to download and install.  Have save me a lot of time
+The TurboPower packages are well worth the effort to download and install.  Have saved me a lot of time
 and effort, particularly the Orpheus packages.
 
 Have an old copy of Delphi 3 that I use off and on and maintain this program using that copy.  May
